@@ -18,13 +18,13 @@ public class CommentController {
     private final CommentRepository commentRepository;
 
     @GetMapping
-    public ResponseEntity<List<Comment>> getAll(){
-        return  ResponseEntity.ok().body(commentRepository.findAll());
+    public ResponseEntity<List<Comment>> getAll() {
+        return ResponseEntity.ok().body(commentRepository.findAll());
     }
 
     @PostMapping
-    public ResponseEntity<Comment> getAll(@RequestBody Comment comment){
-        return  ResponseEntity.ok().body(commentRepository.save(comment));
+    public ResponseEntity<Comment> getAll(@RequestBody Comment comment) {
+        return ResponseEntity.ok().body(commentRepository.save(comment));
     }
 
 
